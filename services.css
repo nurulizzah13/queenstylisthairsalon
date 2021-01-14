@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+	height: 100%;
+	width:100%;
+	font-family: 'Poppins', sans-serif;
+	color: #222;
+}
+.navbar-dark{
+	background: rgba(2, 2, 2, 0.63);
+}
+.navbar-dark .navbar-nav .nav-link{
+	color: yellow!important;
+	letter-spacing: 1px;
+	font-size: 16px;
+	position: relative;
+	padding: 10px 15px;
+}
+.navbar-dark .navbar-nav .nav-item{
+	margin: 0px 5px;
+}
+.navbar-dark .navbar-nav .nav-item span{
+	position: relative;
+	z-index: 2;
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav 
+.nav-link:focus{
+	color: yellow;
+	background: #000;
+}
+.navbar-dark .navbar-nav .nav-link.active{	
+	color: yellow;
+	background: #000;
+}
+.navbar-dark .navbar-nav .nav-link::after {
+    content: '';
+    width: 0;
+    height: 5px;
+    background: #0a0a0a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+	right: 0;
+	text-align: center;
+	margin: 0 auto;
+    border-radius: 0px;
+    transition: all .5s;
+    z-index: 0;
+}
+.navbar-dark .navbar-nav .nav-link.active:after{
+    width:84.5%;
+    height: 100%;
+}
+.navbar-toggler{
+    outline:none!important;
+}
+
+body {
+	background: #ddd;
+	font-family: poppins;
+}
+a{
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	color: #333;
+}
+a:hover { text-decoration: none }
+
+.section-header{
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 15px;
+}
+.section-header p{
+	font-size: 18px;
+}
+.single-service{
+	border: 1px solid #ebebeb;
+	text-align: center;
+	background: #fff;
+}
+.service-bg{
+	height: 353px;
+	position: relative;
+}
+.service-bg-1{
+	background: url("hair style 2.jpg");
+	-webkit-background-size: cover;
+	background-position: center;
+}
+.service-bg-2{
+	background: url("hair treatment.jpg");
+	-webkit-background-size: cover;
+	background-position: center;
+}
+.service-bg-3{
+	background: url("hair cutting.jpg");
+	-webkit-background-size: cover;
+	background-position: center;
+}
+.service-bg-4{
+	background: url("hair wash.jpg");
+	-webkit-background-size: cover;
+	background-position: center;
+}
+.service-bg-5{
+	background: url("hair rebounding.jpg");
+	-webkit-background-size: cover;
+	background-position: center;
+}
+.service-bg-6{
+	background: url("coloring hair.jpg");
+	-webkit-background-size: cover;
+	background-position: center;
+}
+.service-bg h2{
+	color: #fff;
+	background: tomato;
+	border: 1px solid tomato;
+	font-size: 17px;
+	text-align: center;
+	font-weight: 700;
+	padding: 15px;
+	position: absolute;
+	left: 8%;
+	width: 84%;
+	margin: 0;
+	bottom: -25px;
+	border-radius: 50px;
+	letter-spacing: 2px;
+}
+.single-service:hover .service-bg h2{
+	background: #fff;
+	transition: .9s;
+	color: tomato;
+}
+.service-text{
+	padding: 50px 30px 20px;
+	font-size: 15px;
+	font-weight: 400;
+}
+.service-text p:last-child{
+	margin: 0;
+	line-height: 1.8;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #fcfcfc;
+}
+footer{
+	background: #111;
+	height: auto;
+	width: 100vw;
+	font-family: "Open Sans";
+	padding-top: 10px;
+	color: #fff;
+}
+.footer-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.footer-content h3{
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 3rem;
+}
+.footer-content p{
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 28px;
+	font-size: 14px;
+}
+.footer-bottom{
+	background: #000;
+	width: 100vw;
+	padding: 20px 0;
+	text-align: center;
+}
+.footer-bottom p{
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+}
+.footer-bottom span{
+	text-transform: uppercase;
+	opacity: .4;
+	font-weight: 200;
+}
+
+@media only screen and (max-width: 767px) {
+	.single-service{
+		margin-top: 30px;
+	}
+	.service-bg h2{
+		font-size: 13px;
+	}
+}
